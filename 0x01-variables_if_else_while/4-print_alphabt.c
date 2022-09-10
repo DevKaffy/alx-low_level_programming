@@ -8,16 +8,15 @@
  */
 int main(void)
 {
-	char a;
+	char i = 'a';
 
-	for (a = 'a'; a <= 'z'; a++)
+	while (i <= 'z')
 	{
-		if (a == 'q' || a == 'e')
-		{
-			continue;
-		}
-		putchar(a);
+		if (i == 'e' || i == 'q')
+			++i;
+		putchar(i);
+		++i;
 	}
 	putchar('\n');
-	return (0);
+	return (0)
 }
