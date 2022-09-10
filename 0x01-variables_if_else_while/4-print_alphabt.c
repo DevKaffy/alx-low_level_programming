@@ -1,4 +1,4 @@
-#include<unistd.h>
+#include<stdio.h>
 
 /**
  * main - print the letters of the alphabet except e and q
@@ -18,5 +18,5 @@ int main(void)
 		++i;
 	}
 	putchar('\n');
-	return (0)
+	return (0);
 }
