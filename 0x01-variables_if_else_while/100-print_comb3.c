@@ -8,19 +8,24 @@
  */
 int main(void)
 {
-	int digit = 0;
+	int a;
+	int b;
 
-	while (digit <= 9)
+	for (a = 10; a <= 19; a++)
 	{
-		putchar(digit + 48);
-
-		if (digit != 9)
+		for (b = 10; b <= 19; b++)
 		{
-			putchar(',');
-			putchar(' ');
+			if ((b % 10) > (a % 10))
+			{
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				if (a != 18 || b != 19)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
-
-		++digit;
 	}
 	putchar('\n');
 	return (0);
