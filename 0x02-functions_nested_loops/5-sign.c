@@ -5,7 +5,7 @@
  *
  * @n: character to compare
  *
- * Result: always 0
+ * Result: 1 if positive, 0 if zero, -1if negative
  * 
  */
 
@@ -14,7 +14,7 @@ int print_sign (int n)
 	if (n > 0)
 	{
 		_putchar('+');
-		return (0);
+		return (1);
 	}
 	if (n == 0)
 	{
@@ -22,5 +22,5 @@ int print_sign (int n)
 		return (0);
 	}
 		_putchar('-');
-		return (0);
-}	
+		return (-1);
+}
