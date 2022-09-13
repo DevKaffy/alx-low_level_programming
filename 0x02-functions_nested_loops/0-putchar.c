@@ -3,20 +3,19 @@
 /**
  * main - prints _putchar
  *
- * always return 0
+ * return: always 0
  *
  */
 int main(void)
 {
-	char str[] = "_putchar";
-	int i;
-
-	for (i = 1; i <= 8; ++i)
-	{
-	       _putchar(str[i]);
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
-
 	return (0);
-}
-		       	       
+}		       	       
