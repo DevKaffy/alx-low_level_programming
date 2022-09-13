@@ -6,6 +6,7 @@
  * return: always 0
  *
  */
+
 int main(void)
 {
 	_putchar('_');
@@ -18,4 +19,4 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 	return (0);
-}		       	       
+}
