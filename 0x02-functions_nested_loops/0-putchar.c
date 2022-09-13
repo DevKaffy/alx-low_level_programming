@@ -12,7 +12,9 @@ int main(void)
 	int i;
 
 	for (i = 1; i <= 8; ++i)
-		printf("_putchar(str[i])");
+	{
+		_putchar(str[i]);
+	}
 	_putchar('\n');
 
 	return (0);
