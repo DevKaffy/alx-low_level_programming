@@ -1,13 +1,13 @@
-#include <stdio.h>
+ #include <stdio.h>
 
-/**
- * main - main function
- *
- * Return: always 0
- *
- */
-int main(void)
-{
+ /**
+  * main - main function
+  *
+  * Return: always 0
+  *
+  */
+ int main(void)
+ {
 	int i;
 	int j = 0;
 	
@@ -20,5 +20,5 @@ int main(void)
 	}
 	printf("%d\n", b);
 	return (0);
-}
+ }
 

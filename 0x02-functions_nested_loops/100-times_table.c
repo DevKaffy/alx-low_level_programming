@@ -1,12 +1,12 @@
-#include "main.h"
+ #include "main.h"
 
-/**
- * print_times_table - times table function
- * @n: integer to return
- *
- */
-void print_times_table(int n)
-{
+ /**
+  * print_times_table - times table function
+  * @n: integer to return
+  *
+  */
+ void print_times_table(int n)
+ {
 	int a;
 	int b;
 
@@ -47,4 +47,4 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
-}	
+ }	
