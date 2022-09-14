@@ -21,7 +21,7 @@ int main(void)
 		k = i + j;
 		if (counter < 50)
 		{
-			printf(",");
+			printf(", ");
 		}
 	}
 	printf("\n");
