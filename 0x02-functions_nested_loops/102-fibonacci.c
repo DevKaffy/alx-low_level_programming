@@ -12,9 +12,9 @@ int main(void)
 	long int k = i + j;
 
 	printf("%ld, %ld, ", i, j);
-	while (counter 50)
+	while (counter < 50)
 	{
-		printf("%ld", c);
+		printf("%ld", k);
 		counter++;
 		i = j;
 		j = k;
