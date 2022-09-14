@@ -7,7 +7,7 @@
 int main(void)
 {
 	int counter = 0;
-	long int a = 1; 
+	long int a = 1;
 	long int b = a;
 	long int c = a + b;
 
