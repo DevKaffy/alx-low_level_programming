@@ -2,6 +2,12 @@
 #include "6-abs.c"
 #include <stdio.h>
 
+/**
+ * print_to_98 - print n to 98 counts
+ *
+ * @n: input
+ *
+ */
 void print_to_98(int n)
 {
 	int j;
