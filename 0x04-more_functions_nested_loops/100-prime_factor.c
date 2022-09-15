@@ -4,11 +4,10 @@
  *
  * Return: returns 0
  */
-
 int main(void)
 {
-	unsigned int i = 2;
-	unsigned long j = 612852475143;
+	unsigned int a = 2;
+	unsigned long n = 612852475143;
 
 	while (a != n)
 	{
