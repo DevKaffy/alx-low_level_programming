@@ -1,32 +1,35 @@
+
+
 #include <stdio.h>
 /**
  * main - main function
+ *
  *
  * Return: a number
  */
 int main(void)
 {
-	int k;
+	int i;
 
-	for (k = 1; k <= 100; k++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (k % 3 == 0 || i % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
 			if (i % 3 == 0)
 			{
-				printf('Fizz');
+				printf("Fizz");
 			}
 			if (i % 5 == 0)
 			{
-				printf('Buzz');
+				printf("Buzz");
 			}
 		} else
 		{
 			printf("%d", i);
 		}
 		if (i != 100)
-			printf(' ');
+			printf(" ");
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
