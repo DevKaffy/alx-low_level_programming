@@ -1,7 +1,7 @@
 #include "main.h"
 #include "2-strlen.c"
 /**
- * _strcpy - main function to copy 
+ *  _strcpy - main function to copy
  *
  * @dest: destination to copy
  * @src: src
@@ -14,7 +14,7 @@ char *_strcpy(char *dest, char *src)
 
 	for (i = 0; i <= _strlen(src); i++)
 	{
-		dest[i] =src[i];
+		dest[i] = src[i];
 	}
 	return (dest);
 }
