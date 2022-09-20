@@ -6,7 +6,7 @@
  * @dest: destination to copy
  * @src: src
  *
- * Retur: a character value
+ * Return: a character value
  */
 char *_strcpy(char *dest, char *src)
 {
