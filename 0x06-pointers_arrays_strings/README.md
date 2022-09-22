@@ -1,1 +1,1 @@
-Pointers Array Strings
+Pointers arrays strings
