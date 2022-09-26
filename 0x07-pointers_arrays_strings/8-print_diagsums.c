@@ -32,5 +32,5 @@ void print_diagsums(int *a, int size)
 	{
 		fdiagsum += *(a + size * (i + 1) - (i + 1)));
 	}
-	printf(%d, %d\n", bdiagsum, fdiagsum);
+	printf("%d, %d\n", bdiagsum, fdiagsum);
 }
