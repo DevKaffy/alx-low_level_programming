@@ -22,6 +22,20 @@ int strlen_no_wilds(char *str)
 }
 
 /**
+ * iterate_wild - Iterates through a string located at a wildcard
+ * until it points to a non-wildcard character
+ * @wildstr: The string to be iterated through
+ */
+void iterate_wild(char **wildstr)
+{
+	if (**wildstr == '*')
+	{
+		(*wildstr)++;
+		iterate_wild(wildstr);
+	}
+}
+
+/**
  * postfix_match - Checks if a string str matches the postfix of
  * another string
  * @str: The string to be matched
