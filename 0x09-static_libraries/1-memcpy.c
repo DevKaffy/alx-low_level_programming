@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * _memset - fills memory with a constant byte.
- * @s: string array.
- * @b: constant byte.
+ * _memcpy - fills memory with a constant byte.
+ * @dest: string array.
+ * @src: constant byte.
  * @n: number of bytes.
  * Return: pointer.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < n; i++, n--)
 	{
-		s[i] = b;
+		dest[i] = src[i];
 	}
 
-	return (s);
+	return (dest);
 }
