@@ -1,46 +1,27 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "function_pointers.h"
 
 /**
- * main - Prints the opcodes of itself.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
+ * int_index - Searches for an integer in an array of integers.
+ * @array: The array of integers.
+ * @size: The size of the array.
+ * @cmp: A pointer to the function to be used to compare values.
  *
- * Return: Always 0.
+ * Return: If no element matches or size <= 0 - -1.
+ *         Otherwise - The index of the first element for which
+ *                     the cmp function does not return 0.
  */
-int main(int argc, char *argv[])
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	int bytes, index;
-	int (*address)(int, char **) = main;
-	unsigned char opcode;
+	int index;
 
-	if (argc != 2)
+	if (array == NULL || cmp == NULL)
+		return (-1);
+
+	for (index = 0; index < size; index++)
 	{
-		printf("Error\n");
-		exit(1);
+		if (cmp(array[index]) != 0)
+			return (index);
 	}
 
-	bytes = atoi(argv[1]);
-
-	if (bytes < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
-
-	for (index = 0; index < bytes; index++)
-	{
-		opcode = *(unsigned char *)address;
-		printf("%.2x", opcode);
-
-		if (index == bytes - 1)
-			continue;
-		printf(" ");
-
-		address++;
-	}
-
-	printf("\n");
-
-	return (0);
+	return (-1);
 }
