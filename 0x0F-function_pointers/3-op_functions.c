@@ -1,28 +1,61 @@
 #include "3-calc.h"
-#include <stdlib.h>
-
 /**
- * get_op_func - Selects the correct function to perform
- *               the operation asked by the user.
- * @s: The operator passed as argument.
- *
- * Return: A pointer to the function corresponding
- *         to the operator given as a parameter.
+ * op_add - addition operation
+ * @a: integer a
+ * @b: integer b
+ * Return: sum of a and b
  */
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i = 0;
-
-	while (ops[i].op != NULL && *(ops[i].op) != *s)
-		i++;
-
-	return (ops[i].f);
+	return (a + b);
+}
+/**
+ * op_sub - subtraction operation
+ * @a: integer a
+ * @b: integer b
+ * Return: difference of a and b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+/**
+ * op_mul - subtraction operation
+ * @a: integer a
+ * @b: integer b
+ * Return: product of a and b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * op_div - division operation
+ * @a: integer a
+ * @b: integer b
+ * Return: division of a and b
+ */
+int op_div(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a / b);
+}
+/**
+ * op_mod - subtraction operation
+ * @a: integer a
+ * @b: integer b
+ * Return: modulus of a and b
+ */
+int op_mod(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a % b);
 }
