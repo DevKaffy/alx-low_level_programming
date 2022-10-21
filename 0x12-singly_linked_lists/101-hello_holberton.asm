@@ -1,4 +1,4 @@
-iextern printf
+extern printf
 
 	section .data
 message:	db "Hello, Holberton", 0
